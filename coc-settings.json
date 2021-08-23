@@ -1,0 +1,17 @@
+{
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+	  "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+	  "initializationOptions": {
+				"gocodeCompletionEnabled": true,
+				"diagnosticsEnabled": true,
+				"lintTool": "golint"
+			}
+    }
+  }
+}
+
